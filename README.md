@@ -1,0 +1,1 @@
+Welcome to my interval timer app. My goal is to build a timer that will be primarily useful for figure models, with customizable sequences of repeating timers with a few options for alert tones. 
