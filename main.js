@@ -3,7 +3,15 @@ const newroutine = document.querySelector('#newroutine');
 // initialize button
 newroutine.onclick = goTimer;
 
-function goTimer() {
-    
+const options = [
+    {
+        name: "Routine Name",
+        
+    }
+]
 
+function goTimer() {
+    update(options[0]);
 }
+
+
