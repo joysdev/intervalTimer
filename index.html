@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interval Timer for Figure Models</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    
 </head>
 <body>
-    <button id="newseq">Create New Sequence</button>
+    <button id="new-seq">Create New Sequence</button>
     <div class="sequence-name">
         <input type="text" id="sequence-name" placeholder="Sequence Name" required>
         <label for="sequence-name">Sequence Name</label>
       </div>
     <button id="savedseqs">Saved Sequences</button>
-    
+
+    <form id="new-seq">
+        <label for="new-seq">New Sequence</label>
+        <input id="new-seq-name"></input>
+
+      </form>
+    <script src="main.js"></script>
 </body>
 </html>
 
@@ -40,6 +46,10 @@ inputs:
  minutes
  tone
  volume
+
+drop-down:
+ saved sequences
+ ?is selecting the time  a drop-down?
 
  ?how to nest buttons inside buttons eg the start and quit seq button should be "inside" saved routine and new routine. Exploring my index I realize the sequence name input should be in create new sequence, and from the freeCodeCamp rpg JS lesson, I think it shoudl be like update.locations... 
 -->
