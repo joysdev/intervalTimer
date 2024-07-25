@@ -6,6 +6,7 @@ h1 {
 .btn {
     /*improve style*/
     display: inline-block;
+    text-decoration: none;
     background: linear-gradient(black, grey);
     font-family: sans-serif;
     font-size: larger;
