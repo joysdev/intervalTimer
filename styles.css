@@ -21,3 +21,16 @@ h1 {
 .btn:hover {
     background-color: red !important;
   }*/
+
+form {
+    font-family: sans-serif;
+    
+}
+label {
+    display: block; 
+    margin-top: 20px;
+    
+    
+}
+
+
