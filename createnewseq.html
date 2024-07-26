@@ -11,11 +11,21 @@
 <body>
   <main><h1>Figure Model Interval Timer</h1></main>
     <form class="form">
-        <label>Sequence</label>
-        <input placeholder="name your sequence"></input>
-        <label>Number of Poses</label>
-        <input></input>
-        <!--user input for times of each pose-->
+        <fieldset>
+            <label>Sequence</label>
+            <input type="text" placeholder="name your sequence"></input>
+        </fieldset>
+        <fieldset>
+            <label>Number of Poses</label>
+            <input type="number"></input>
+        </fieldset>
+        <fieldset> <!-- switch from radio to whatever type that is where one selection brings up a different menu when I figure out what that's called --> 
+            <label>Equal Time per Pose</label>
+            <input name="time-per-pose" type="radio"></input>
+            <label>Set Time per Pose Separately</label>
+            <input name="time-per-pose" type="radio"></input>
+        </fieldset>
+
 
       </form>
     <script src="main.js"></script>
