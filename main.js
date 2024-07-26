@@ -1,16 +1,18 @@
 /* If Equal Time per Pose is selected, user is presented with <input type="number">s  one for seconds (>=60), one for minutes (>=60), one for number of poses. Then they can choose a tone 
-(or color flash) for start, finish, and change pose. Then they can save & name, then they can return to main menu, or start routine. Main menu has buttons for new routine and saved routines. Saved routines has buttons for each saved routine, and a button for new routine. New routine has Saved Routines button, and form for inputs.
+(or color flash) for start, finish, and change pose. Then they can save & name, then they can return to main menu, or start sequence. 
+
+Main menu (index.html) has buttons for new sequence and saved sequences. Saved sequences has buttons for each saved sequence, and a button for new sequence. New sequence has Saved sequences button, and form for inputs.
 
 
 
-const newroutine = document.querySelector('#newroutine');
+const newsequence = document.querySelector('#newsequence');
 
-// initialize button this should actually be startroutine.onclick
-newroutine.onclick = goTimer;
+// initialize button this should actually be startsequence.onclick
+newsequence.onclick = goTimer;
 
 const options = [
     {
-        name: "Routine Name",
+        name: "sequence Name",
         
     }
 ]
