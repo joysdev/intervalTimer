@@ -11,6 +11,24 @@
 <body>
   <main><h1>Figure Model Interval Timer</h1></main>
 
+  <!-- I need this part to pull number of poses and create the same number of inputs-->
+
+  <form class="form">
+    <fieldset>
+        <label>Sequence</label>
+        <input type="text" placeholder="name your sequence"></input>
+    </fieldset>
+    <fieldset>
+        <label>Number of Poses</label>
+            <input type="number" min="1"></input>
+    </fieldset>
+    <fieldset>
+        <label>Pose 1 Length</label>
+            <input type="number" id="hour" min="0" step="1" placeholder="Hours"></input>
+            <input type="number" id="minutes" min="0" step="1" placeholder="Minutes"></input>
+            <input type="number" id="seconds" min="0" step="1" placeholder="Seconds"></input>
+    </fieldset>
+
 
   <a class="btn" href="/index.html">Return to Main Menu</a>
   <a class="btn" href="/savedseq.html">Saved Sequences</a>
