@@ -19,6 +19,11 @@ const options = [
 
 function goTimer() {
     update(options[0]);
+} */
+
+const poseNumber = ;
+function fieldsPoseTimes() {
+    
 }
 
 
