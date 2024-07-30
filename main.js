@@ -21,9 +21,9 @@ function goTimer() {
     update(options[0]);
 } */
 
-const poseNumber = ;
-function fieldsPoseTimes() {
-    
-}
+let poseNumber = document.querySelector("#poseNumber");
 
+poseNumber.addEventListener("click", () => {
+    /*add poseNumber-1 more time fields*/
+})
 
