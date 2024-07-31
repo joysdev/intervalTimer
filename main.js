@@ -21,9 +21,34 @@ function goTimer() {
     update(options[0]);
 } */
 
-let poseNumber = document.querySelector("#poseNumber");
+const poseNumber = document.querySelector("#poseNumber");
+
+submit.onclick = createCustomForm;
+
+
+/*
+
+function createCustomForm () {
+
+poseNumber * poseTime
+
+//create poseNumber of poseTime s 
+
+//and change pose label to its position in the list
+
+}
+
+
+const form = [
+    {
+
+    }
+]
 
 poseNumber.addEventListener("click", () => {
-    /*add poseNumber-1 more time fields*/
+    /*add poseNumber-1 more time fields
 })
+ I'm really struggling to figure this out. To reiterate:
+ I want for when User clicks Submit to input number of poses in their custom sequence, they are presented with that number of time fields.
+ */
 
