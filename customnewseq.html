@@ -23,12 +23,16 @@
             <input id="poseNumber" type="number" min="1"></input>
             <input onclick="fieldsPoseTimes()" type="submit" id="submit" value="Submit"/>
     </fieldset>
-    <fieldset id="poseTime">
-        <label>Pose 1 Length</label>
-            <input type="number" id="hour" min="0" step="1" placeholder="Hours"></input>
-            <input type="number" id="minutes" min="0" step="1" placeholder="Minutes"></input>
-            <input type="number" id="seconds" min="0" step="1" placeholder="Seconds"></input>
-    </fieldset>
+    <div id="timerHolder">
+        <div id="customTimer">
+            <fieldset id="poseTime">
+                <label>Pose 1 Length</label>
+                    <input type="number" id="hour" min="0" step="1" placeholder="Hours"></input>
+                    <input type="number" id="minutes" min="0" step="1" placeholder="Minutes"></input>
+                    <input type="number" id="seconds" min="0" step="1" placeholder="Seconds"></input>
+            </fieldset>
+         </div>
+    </div>
 
 
   <a class="btn" href="/index.html">Return to Main Menu</a>

@@ -23,7 +23,15 @@ function goTimer() {
 
 const poseNumber = document.querySelector("#poseNumber");
 
-submit.onclick = createCustomForm;
+submit.onclick = Add();
+
+var _counter = 0;
+function Add() {
+    _counter(* poseNumber);
+    var oClone = document.getElementById("customTimer").cloneNode(true);
+    oClone.id += (_counter + "");
+    document.getElementById("timerHolder").appendChild(oClone);
+}
 
 
 /*
@@ -37,6 +45,8 @@ poseNumber * poseTime
 //and change pose label to its position in the list
 
 }
+
+createCustomForm (poseNumber * poseTime)?
 
 
 const form = [
