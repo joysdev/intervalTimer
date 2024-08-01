@@ -22,16 +22,42 @@ function goTimer() {
 } */
 
 const poseNumber = document.querySelector("#poseNumber");
+const poseTime = document.querySelector("#poseTime")
 
-submit.onclick = Add();
+//Can I get submit clicks to each add a time field?
+submit.onclick = addField;
 
-var _counter = 0;
-function Add() {
+
+function addField() {
+    const poseTime = document.querySelector("#poseTime");
+    poseTime.innerHTML += `
+<div id="customTimer">
+            <fieldset id="poseTime">
+                <label>Pose Length</label>
+                    <input type="number" id="hour" min="0" step="1" placeholder="Hours"></input>
+                    <input type="number" id="minutes" min="0" step="1" placeholder="Minutes"></input>
+                    <input type="number" id="seconds" min="0" step="1" placeholder="Seconds"></input>
+            </fieldset>
+         </div>
+`;
+}
+
+
+function addField() {
+    
+}
+
+//var _counter = 0;
+/*function fieldMult() {
+
+
+    
+}
     _counter++; //how to get this to be poseNumber??
     var oClone = document.getElementById("customTimer").cloneNode(true);
     oClone.id += (_counter + "");
     document.getElementById("timerHolder").appendChild(oClone);
-}
+
 
 
 /*
