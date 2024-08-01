@@ -1,3 +1,14 @@
+function addFn() {
+    const divEle = document.getElementById("poseTime");
+    divEle.innerHTML += `
+<div id="poseTime"><input type="number" id="hour" min="0" step="1" placeholder="Hours"></input>
+            <input type="number" id="minutes" min="0" step="1" placeholder="Minutes"></input>
+            <input type="number" id="seconds" min="0" step="1" placeholder="Seconds"></input>
+        </div>
+`;
+}
+
+
 /* If Equal Time per Pose is selected, user is presented with <input type="number">s  one for seconds (>=60), one for minutes (>=60), one for number of poses. Then they can choose a tone 
 (or color flash) for start, finish, and change pose. Then they can save & name, then they can return to main menu, or start sequence. 
 
@@ -19,7 +30,7 @@ const options = [
 
 function goTimer() {
     update(options[0]);
-} */
+} 
 
 const poseNumber = document.querySelector("#poseNumber");
 const poseTime = document.querySelector("#poseTime")

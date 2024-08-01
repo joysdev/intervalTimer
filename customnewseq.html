@@ -13,6 +13,16 @@
 
   <!-- I need this part to pull number of poses and create the same number of inputs-->
 
+  <!--Testing code from G4G
+
+  <div class="container">
+    <button class="add-button" onclick="addFn()">Add Input Fields</button>
+    <div id="inputFields">
+    </div>
+</div>
+
+
+
   <form class="form">
     <fieldset>
         <label>Sequence</label>
@@ -21,9 +31,18 @@
     <fieldset>
         <label>Number of Poses</label>
             <input id="poseNumber" type="number" min="1"></input>
-            <input onclick="fieldsPoseTimes()" type="submit" id="submit" value="Submit"/>
-    </fieldset>
-    <div id="timerHolder">
+            <input onclick="addField()" type="submit" id="submit" value="Submit"/>
+    </fieldset>-->
+
+    <div class="container">
+        <button class="add-button" onclick="addFn()">Add a Pose</button>
+        <div id="poseTime"><input type="number" id="hour" min="0" step="1" placeholder="Hours"></input>
+            <input type="number" id="minutes" min="0" step="1" placeholder="Minutes"></input>
+            <input type="number" id="seconds" min="0" step="1" placeholder="Seconds"></input>
+        </div>
+    </div>
+
+   <!-- <div id="timerHolder">
         <div id="customTimer">
             <fieldset id="poseTime">
                 <label>Pose Length</label>
@@ -32,7 +51,7 @@
                     <input type="number" id="seconds" min="0" step="1" placeholder="Seconds"></input>
             </fieldset>
          </div>
-    </div>
+    </div> -->
 
 
   <a class="btn" href="/index.html">Return to Main Menu</a>
