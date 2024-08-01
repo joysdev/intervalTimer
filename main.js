@@ -27,7 +27,7 @@ submit.onclick = Add();
 
 var _counter = 0;
 function Add() {
-    _counter(* poseNumber);
+    _counter++; //how to get this to be poseNumber??
     var oClone = document.getElementById("customTimer").cloneNode(true);
     oClone.id += (_counter + "");
     document.getElementById("timerHolder").appendChild(oClone);
