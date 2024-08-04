@@ -8,6 +8,10 @@ function addFn() {
 `;
 }
 
+/*function removeFn() {
+    poseTime.remove();
+}
+
 
 /* If Equal Time per Pose is selected, user is presented with <input type="number">s  one for seconds (>=60), one for minutes (>=60), one for number of poses. Then they can choose a tone 
 (or color flash) for start, finish, and change pose. Then they can save & name, then they can return to main menu, or start sequence. 
