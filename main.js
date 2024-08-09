@@ -1,9 +1,9 @@
 function addFn() {
     const divEle = document.getElementById("poseTime");
     divEle.innerHTML += `
-<div id="poseTime"><input type="number" id="hour" min="0" max="24" step="1" placeholder="Hours" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"></input>
-            <input type="number" id="minutes" min="0" max="60" step="1" placeholder="Minutes"></input>
-            <input type="number" id="seconds" min="0" max="60" step="1" placeholder="Seconds"></input>
+<div id="poseTime"><input type="number" id="hour" min="0" max="24" step="1" placeholder="hr" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"></input>
+            <input type="number" id="minutes" min="0" max="60" step="1" placeholder="min"></input>
+            <input type="number" id="seconds" min="0" max="60" step="1" placeholder="sec"></input>
         </div>
 `;
 }
