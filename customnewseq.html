@@ -16,13 +16,13 @@
   <main><h1>Figure Model Interval Timer</h1></main>
 
     <div class="container">
-        <button class="btn" onclick="addFn()">Add a Pose</button>
+        <button class="btn" onclick="addFn()">Add a Pose</button> 
         <!--<button class="remove-button" onClick="removeFn()">Remove a Pose</button>-->
-        <div id="poseTime">
-            <input type="number" id="hr" min="0" max="24" step="1" placeholder="hr" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"></input>
-            <input type="number" id="min" min="0" max="60" step="1" placeholder="min"></input>
-            <input type="number" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
-        </div>
+    <div class="input" id="poseTime">
+            <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"></input>
+            <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
+            <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
+          </div>
     </div>
 
   <a class="btn" href="/index.html">Return to Main Menu</a>
