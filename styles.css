@@ -1,10 +1,63 @@
+/*to-do:
+  - block vertically fieldset
+  - write font and apply once 
+  - why isn't poppins showing up on all? does the above fix it?
+  */
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  }
+
+* {
+    font-family: "Poppins", sans-serif;
+
+}
+ 
 h1 {
     text-align: center;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.btn {
-    /*improve style*/
+.btn, fieldset {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+.btn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+    /*improve style
     display: inline-block;
     text-decoration: none;
     background: linear-gradient(black, grey);
@@ -15,18 +68,16 @@ h1 {
     padding: 10px;
     margin: 10px;
     border: 0;
-}
+    border-radius: 50%;
+}*/
 
-/* this isn't working
-.btn:hover {
-    background-color: red !important;
-  }*/
 
 form {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     
 }
 label {
+    font-family: "Poppins", sans-serif;
     display: block; 
     margin-top: 20px;
     
