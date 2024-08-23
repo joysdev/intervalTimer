@@ -22,7 +22,9 @@ h1 {
     font-size: 2rem;
 }
 
-
+#mainbtns {
+    margin-left: 25%;
+}
 
 .btn, fieldset {
   align-items: center;
