@@ -22,8 +22,16 @@ h1 {
     font-size: 2rem;
 }
 
-#mainbtns {
+#indexmainbtns {
     margin-left: 25%;
+}
+
+#createnewseqmainbtns {
+    margin-left: 30vw;
+}
+
+#customnewseqmainbtns {
+    margin-left: 33vw;
 }
 
 .btn, fieldset {
