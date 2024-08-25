@@ -3,11 +3,48 @@ function addFn() {
     divEle.innerHTML += `<div id="poseTime"><input type="number" class="input" id="hour" min="0" max="24" step="1" placeholder="hr" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"></input><input type="number" class="input" id="minutes" min="0" max="60" step="1" placeholder="min"></input><input type="number" class="input" id="seconds" min="0" max="60" step="1" placeholder="sec"></input></div>`;
 }
 
+function removeFn() {
+    const divEle = document.getElementById("poseTime");
+    divEle.innerHTML -= `
+  <div>
+  <input type="text" placeholder="Enter value" class="input-field">
+  </div>
+  `;
+  }
+
 /*function removeFn() {
 
 }
 
-function saveFn() {
+
+$(function() {
+    var poseDiv = $('#poseTime');
+    var i = $('#poseTime').size() + 1;
+
+    $('#addBtn').bind('click', function() {
+            //$().appendTo(scntDiv);
+            console.log(i)
+            $('<p id="newp'+i+'"></p>').appendTo(scntDiv);
+            var html = '<fieldset class="form-group input-group-sm col-md-4"><label for="formGroupExampleInput">Title</label><input type="text" class="form-control" id="p_scnt" name="p_scnt_' + i +'" style="max-width: 100px;" placeholder="e.g. Day 1" /></fieldset><fieldset class="form-group input-group-sm col-md-8"><label for="formGroupExampleInput">Artists</label><input type="text" class="form-control" id="p_scnt" name="p_scnt_' + i +'" style="max-width: 250px;" placeholder="e.g. AC/DC, Guns and Roses" /></fieldset><a href="#" id="remBtn' + i +'">Remove</a>';
+             var succss = $("#newp"+i).append(html)
+             console.log(succss)
+            $('#remBtn'+ i ).on('click', function() {
+            	console.log($(this).parent())
+                $(this).parent().remove();
+                   return false;
+            });
+            i++;
+            return false;
+    });
+
+    
+});
+
+
+
+
+
+/*function saveFn() {
     
 }
 
