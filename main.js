@@ -1,15 +1,31 @@
+const divEle = document.getElementById("poseTime");
+
+let hr = 1;
+let min = 2;
+let sec = 3;
+
+
+
 function addFn() {
-    const divEle = document.getElementById("poseTime");
-    divEle.innerHTML += `<div id="poseTime"><input type="number" class="input" id="hour" min="0" max="24" step="1" placeholder="hr" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"></input><input type="number" class="input" id="minutes" min="0" max="60" step="1" placeholder="min"></input><input type="number" class="input" id="seconds" min="0" max="60" step="1" placeholder="sec"></input></div>`;
+    
+    divEle.innerHTML += `<div id="poseTime">
+    <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
+    <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
+    <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
+ </div>`;
 }
 
+/* What I want removeFn() to accomplish:
+Delete the last poseTime added when User clicks the Remove a Pose button. */
+
+
+
 function removeFn() {
-    const divEle = document.getElementById("poseTime");
-    divEle.innerHTML -= `
-  <div>
-  <input type="text" placeholder="Enter value" class="input-field">
-  </div>
-  `;
+    divEle.innerHTML -= ` <div id="poseTime">
+    <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
+    <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
+    <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
+ </div>`;
   }
 
 /*function removeFn() {
