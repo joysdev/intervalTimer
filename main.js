@@ -4,6 +4,14 @@ let hr = 1;
 let min = 2;
 let sec = 3;
 
+let isError = false;
+
+/* apply this only to time inputs, not seq naming
+function cleanInputString(str) {
+    const regex = /[+-\s]/g;
+    return str.replace(regex, '');
+  } */
+
 function addPose() {
     poseTime.innerHTML += `<div id="poseTime">
     <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
