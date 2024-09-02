@@ -1,4 +1,7 @@
 const poseTime = document.getElementById("poseTime");
+const form = `<input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
+<input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
+<input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>`;
 
 let hr = 1;
 let min = 2;
@@ -12,12 +15,9 @@ function cleanInputString(str) {
     return str.replace(regex, '');
   } */
 
+// 01Sept the following works but adds them inline instead of block
 function addPose() {
-    poseTime.innerHTML += `<div id="poseTime">
-    <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
-    <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
-    <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
- </div>`;
+    poseTime.innerHTML += form;
 }
 
 
