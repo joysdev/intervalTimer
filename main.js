@@ -37,11 +37,7 @@ Delete the last poseTime added when User clicks the Remove a Pose button. */
 
 
 function removeFn() {
-    poseTime.innerHTML -= ` <div id="poseTime">
-    <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
-    <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
-    <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
- </div>`;
+    poseTime.innerHTML -= form;
  
   }
 
