@@ -3,6 +3,8 @@ const form = `<input type="number" class="input" id="hr" min="0" max="24" step="
 <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
 <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>`;
 
+const addBtn = document.getElementById('addBtn');
+
 let hr = 1;
 let min = 2;
 let sec = 3;
@@ -19,6 +21,8 @@ function cleanInputString(str) {
 function addPose() {
     poseTime.innerHTML += form;
 }
+
+addBtn.addEventListener("click", addPose);
 
 
 
