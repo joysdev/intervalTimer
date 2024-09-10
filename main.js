@@ -24,6 +24,21 @@ function addPose() {
 
 addBtn.addEventListener("click", addPose);
 
+let input = document.getElementsByClassName(input);
+
+if (/[^\d]/.test(input)) {
+    // value has characters other than 0-9.
+    alert(Invalid);
+  };
+
+/*line 50 of calorie counter 
+
+if (invalidInputMatch) {
+    alert(`Invalid Input: ${invalidInputMatch[0]}`);
+    isError = true;
+    return null;
+}
+    */
 
 
 /*function addFn() {
