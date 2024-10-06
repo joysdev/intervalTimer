@@ -1,4 +1,29 @@
-const poseTime = document.getElementById("poseTime");
+function addFn() {
+    const divEle = document.getElementById("poseTime");
+    divEle.innerHTML += `<div id="poseTime"><input type="number" class="input" id="hour" min="0" max="24" step="1" placeholder="hr" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"></input><input type="number" class="input" id="minutes" min="0" max="60" step="1" placeholder="min"></input><input type="number" class="input" id="seconds" min="0" max="60" step="1" placeholder="sec"></input></div>`;
+};
+
+function remFn() {
+    const divEle = document.getElementById("poseTime");
+    poseTime -= 1;
+};
+//https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript (Bergi answer)
+/*var interval = 1000; // ms
+var expected = Date.now() + interval;
+setTimeout(step, interval);
+function step() {
+    var dt = Date.now() - expected; // the drift (positive for overshooting)
+    if (dt > interval) {
+        // something really bad happened. Maybe the browser (tab) was inactive?
+        // possibly special handling to avoid futile "catch up" run
+    }
+    … // do what is to be done
+
+    expected += interval;
+    setTimeout(step, Math.max(0, interval - dt)); // take into account drift
+}
+
+/*const poseTime = document.getElementById("poseTime");
 const form = `<input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
 <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
 <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>`;
@@ -17,12 +42,14 @@ function cleanInputString(str) {
     return str.replace(regex, '');
   } */
 
-// 01Sept the following works but adds them inline instead of block
+/*01Sept the following works but adds them inline instead of block
 function addPose() {
     poseTime.innerHTML += form;
 }
 
 addBtn.addEventListener("click", addPose);
+
+/*
 
 let input = document.getElementsByClassName(input);
 
@@ -31,7 +58,7 @@ if (/[^\d]/.test(input)) {
     alert(Invalid);
   };
 
-/*line 50 of calorie counter 
+line 50 of calorie counter 
 
 if (invalidInputMatch) {
     alert(`Invalid Input: ${invalidInputMatch[0]}`);
@@ -51,7 +78,7 @@ if (invalidInputMatch) {
 }
 
 /* What I want removeFn() to accomplish:
-Delete the last poseTime added when User clicks the Remove a Pose button. */
+Delete the last poseTime added when User clicks the Remove a Pose button. 
 
 
 

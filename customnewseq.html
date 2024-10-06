@@ -1,3 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Model Interval Timer</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+ <h1>Figure Model Interval Timer</h1>
+  <!--<button class="remove-button" onClick="removeFn()">Remove a Pose</button>   onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"-->
+ <div id="poseTime">
+  <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
+  <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
+  <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
+  </div>
+
+ <button class="btn" onclick="addFn()">Add a Pose</button>
+ <button class="btn" onclick="remFn()">Remove a Pose</button>
+  <a class="btn" href="/index.html">Return to Main Menu</a>
+  <a class="btn" href="/savedseq.html">Saved Sequences</a>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +50,7 @@
 
 <body>
  <h1>Figure Model Interval Timer</h1>
-  <!--<button class="remove-button" onClick="removeFn()">Remove a Pose</button>   onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"-->
+  <button class="remove-button" onClick="removeFn()">Remove a Pose</button>   onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
  <div id="poseTime">
     <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
     <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
@@ -36,4 +72,4 @@
 
   <script src="main.js"></script>
 </body>
-</html>
+</html> -->
