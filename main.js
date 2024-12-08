@@ -4,6 +4,18 @@ function addFn() {
 };
 
 function remFn() {
+  const divEle = document.getElementById("poseTime");
+  // Check if there are multiple pose containers to remove
+  const lastPose = divEle.querySelector("div:last-child"); // Target the last added pose
+  if (lastPose && divEle.childElementCount > 1) {
+      lastPose.remove(); // Remove only if there's more than one pose
+  } else {
+      alert("No poses left to remove!");
+  }
+}
+
+
+/*function remFn() {
     const divEle = document.getElementById("poseTime");
     poseTime -= 1;
 };
