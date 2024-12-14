@@ -1,3 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Model Interval Timer</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+ <h1>Figure Model Interval Timer</h1>
+  <!--<button class="remove-button" onClick="removeFn()">Remove a Pose</button>   onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"-->
+ 
+  <div id="poseContainer">
+    <div id="poseTime">
+        <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr">
+        <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min">
+        <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec">
+    </div>
+</div>
+
+ 
+  <!--<
+  <div id="poseTime">
+  <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
+  <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
+  <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
+  </div>
+  -->
+
+ <button class="btn" onclick="addFn()">Add a Pose</button>
+ <button class="btn" onclick="remFn()">Remove a Pose</button>
+  <a class="btn" href="/index.html">Return to Main Menu</a>
+  <a class="btn" href="/savedseq.html">Saved Sequences</a>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,35 +61,27 @@
 </head>
 
 <body>
-  <main><h1>Figure Model Interval Timer</h1></main>
-    <form class="form">
-        <fieldset>
-            <label>Sequence</label>
-            <input id="createseqname" type="text" placeholder="name your sequence"></input>
-        </fieldset>
-        <fieldset>
-            <label>Number of Poses</label>
-                <input id="short" type="number" min="1"></input>
-        </fieldset>
-        <fieldset>
-            <label>Time per Pose</label>
-                <input id="short" type="number" id="hr" min="0" step="1" placeholder="hr"></input>
-                <input id="short" type="number" id="min" min="0" step="1" placeholder="min"></input>
-                <input id="short" type="number" id="sec" min="0" step="1" placeholder="sec"></input>
-               <!--need newnamed submit button that function creates a timer--> 
-        </fieldset>
-        <button class="btn" type="button" onclick="">Save</button>
-        <button class="btn" onclick="">Start</button>
+ <h1>Figure Model Interval Timer</h1>
+  <button class="remove-button" onClick="removeFn()">Remove a Pose</button>   onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+ <div id="poseTime">
+    <input type="number" class="input" id="hr" min="0" max="24" step="1" placeholder="hr"></input>
+    <input type="number" class="input" id="min" min="0" max="60" step="1" placeholder="min"></input>
+    <input type="number" class="input" id="sec" min="0" max="60" step="1" placeholder="sec"></input>
+ </div>
+  
 
-        <div id="mainbtns">
-            <a class="btn" href="/customnewseq.html">Create Custom Sequence</a>
-            <a class="btn" href="/index.html">Return to Main Menu</a>
-        </div>
+ <button class="btn" id="addBtn">Add a Pose</button>
+ <button class="btn" id="remBtn" onclick="removeFn()">Remove a Pose</button>
+ <button class="btn" id="saveBtn" type="button" onclick="saveFn()">Save</button>
+ <button class="btn" id="startBtn" onclick="startFn()">Start</button>
 
 
 
+ <div id="customnewseqmainbtns">
+  <a class="btn" href="/index.html">Return to Main Menu</a>
+  <a class="btn" href="/savedseq.html">Saved Sequences</a>
+</div>
 
-      </form>
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
-</html> 
+</html> -->
